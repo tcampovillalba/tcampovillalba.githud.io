@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Podcasts</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bb59c00efd.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,500,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+   
+    <div class="contenedor">
+        <div class="navcontenedor ">
+                <img src="img/logo.svg" alt="logo" class="logonav">
+            <nav class="navbar">
+                <input type="checkbox" id="burger-shower" class="burger-shower">
+                <label for="burger-shower" class="hamburger"><i class="fas fa-bars"></i></label>
+                <label for="burger-shower" class="openav"><i class="fas fa-times"></i></label>
+                <ul class="menunav">
+                    <li><a href="#episodio" class="font-mono navlink lettereffect">EPISODIOS</a></li>
+                    <li><a href="#aboutus" class="font-mono navlink lettereffect">NOSOTROS</a></li>
+                    <li><a href="#interviews" class="font-mono navlink lettereffect">ENTREVISTAS</a></li>
+                    <li><a href="#topics" class="font-mono navlink lettereffect">TÓPICOS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="heading">
+            <h1 class="title font-sans">Hello <span class="line-through">world</span> pale blue dot <span
+                    class="bluedot">.</span> </h1>
+            <p class="letterhead font-mono">Un podcast que explora el mundo de la programación y <br class="break"> la
+                tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <a href="https://syntax.fm/" class="button font-mono getmore" target="_blank">CONOCÉ MÁS</a>
+        </header>
+        <section class="episodio">
+            <h2 class="font-sans subtitle episodiosub" id="episodio">Episodios</h2>
+            <div class="playercontainer">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="300" height="80"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media" class="player" data-aos="fade-right"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="300" height="80"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media" class="player"data-aos="fade-left"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="300" height="80"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media" class="player" data-aos="fade-right"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="300"height="80"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media" class="player playerlast" data-aos="fade-left"></iframe>
+            </div>
+        </section>
+        <div class="repositioning">
+            <img data-aos="fade-up-right" src="img/phone.png" alt="phone" class=phone>
+            <section class="comefrom">
+                <h2 class="font-sans subtitle comefromsub" id="aboutus">De dónde venimos</h2>
+                <p class="font-mono comefromtext" data-aos="zoom-in">
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+                    the Universe, are challenged by this point of pale light.<br><br>
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                    vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </p>
+            </section>
+            <section class="guests" id="interviews">
+                <h2 class="font-sans subtitle guestsub">Invitadas/os estelares</h2>
+                <img src="img/grace-hopper.png" alt="grace-hopper" class="guestimg">
+                <img src="img/Katie-Bouman.png" alt="Katie-Bouman" class="guestimg">
+                <img src="img/Margaret_Hamilton.png" alt="Margaret_Hamilton" class="guestimg">
+                <img src="img/era1103.png" alt="1103 computer" class="guestimg">
+                <img src="img/computer.png"
+                    alt="computer operators" class="guestimg">
+                <img src="img/susan-kare.png" alt="susan-kare" class="guestimg">
+            </section>
+            <section class="topics">
+                <h2 class="font-sans subtitle topicsub" id="topics">Algunos de nuestros temas</h2>
+                <div class="topicscontainer">
+                    <figure class="topicbox" data-aos="flip-up">
+                        <img src="img/icon1.svg" alt="icon1" class=icons>
+                        <p class="font-sans icondesc firstitem">Trabajo Remoto</p>
+                    </figure> 
+                    <figure class="topicbox" data-aos="flip-up">
+                        <img src="img/icon2.svg" alt="icon2" class="icons">
+                        <p class="font-sans icondesc">Repensando la programación</p>
+                    </figure>
+                    <figure class="topicbox" data-aos="flip-up">
+                        <img src="img/icon3.svg" alt="icon3" class="icons">
+                        <p class="font-sans icondesc">Bases del Código</p>
+                    </figure>
+                    <figure class="topicbox" data-aos="flip-up">
+                        <img src="img/icon4.svg" alt="icon4" class="icons">
+                        <p class="font-sans icondesc lastitem">Seguridad informática</p>
+                    </figure>
+                </div>
+            </section>
+            <section class="lastnews">
+                <h2 class="font-sans subtitle newsub">¿Querés las últimas novedades?</h2>
+                <a href="https://syntax.fm/" class="button font-mono listen" target="_blank">ESCUCHÁ LOS
+                    EPISODIOS</a>
+            </section>
+            <footer>
+                <p class="font-mono copyright">© 2019— Hello blue pale dot</p>
+                <div class="brands">
+                    <a href="https://spotify.com" target="_blank"><i class="fab fa-spotify brandicon firtsicon "></i></a>
+                    <a href="https://instragram.com" target="_blank"><i class="fab fa-instagram brandicon "></i></a>
+                    <a href="https://twitter.com" target="_blank"  class="hvr-icon-wobble-horizontal"><i class="fab fa-twitter brandicon "></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook brandicon "></i></a>
+                    <a href="https://web.telegram.org" target="_blank"><i class="fab fa-telegram brandicon hvr-grow-rotate "></i></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+   
+   
+</body>
+
+</html>

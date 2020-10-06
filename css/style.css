@@ -1,0 +1,850 @@
+:root {
+  --blanco: #ffffff;
+  --negro: #060a24;
+  --verde: #00f3bb;
+  --azul: #0000ec;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0%;
+  border: 0px;
+  margin: 0%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.font-sans {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.font-mono {
+  font-family: "IBM Plex Mono", monospace, sans-serif;
+}
+
+
+
+.button {
+  width: 288px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--negro);
+  font-size: 1rem;
+  letter-spacing: 0px;
+  line-height: 22px;
+  font-weight: 600;
+  background-color: var(--verde);
+}
+
+.button:hover {
+  background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+  color: var(--blanco);
+  transition: color 0.5s ease-in;
+}
+
+.subtitle {
+  font-size: 2.25rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  height: 28px;
+  margin-top: 24px;
+  margin-left: 16px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navcontenedor {
+  width: 100%;
+  height: 44px;
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logonav {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+
+.navbar {
+  width: 18px;
+  height: 12px;
+  margin-right: 19px;
+}
+
+.burger-shower {
+  display: none;
+}
+
+.openav {
+  opacity: 0;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 16px;
+  right: 19px;
+  
+  transition: opacity 0.5s linear;
+}
+
+.hamburger {
+  opacity: 1;
+  
+  transition: opacity 0.5s linear 0.5s;
+}
+
+.menunav {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  opacity: 0;
+
+  transition: all 1s ease-in-out;
+}
+
+.burger-shower:checked ~ .menunav {
+  width: 100%;
+  height: 224px;
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  background-color: var(--azul);
+  opacity: 1;
+
+  transition: all 1s ease-in-out;
+}
+
+.burger-shower:checked ~ .hamburger {
+  opacity: 0;
+
+  transition: opacity 0.5s linear;
+}
+
+.burger-shower:checked ~ .openav {
+  opacity: 1;
+
+  transition: opacity 0.5s linear 0.5s;
+}
+
+.navlink {
+  
+  font-size: 1rem;
+  color: var(--blanco);
+  
+}
+
+.fisrtlink {
+  margin-top: 16px;
+}
+
+.title {
+  width: 90%;
+  font-size: 2.25rem;
+  letter-spacing: 0px;
+  line-height: 42px;
+  margin-top: 29px;
+  margin-left: 16px;
+  font-weight: 400;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.bluedot {
+  position: absolute;
+  left: auto;
+  color: var(--azul);
+}
+
+.letterhead {
+  width: 90%;
+  height: auto;
+  font-size: 0.875rem;
+  color: var(--negro);
+  letter-spacing: 0px;
+  line-height: 22px;
+  text-align: justify;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.break {
+  display: none;
+}
+
+.getmore {
+  margin-top: 36px;
+  margin-left: 16px;
+  margin-bottom: 24px;
+}
+
+.episodio {
+  width: 100%;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+
+  clip-path: polygon(100% 0, 100% 96%, 0 100%, 0 3%);
+  
+  display: flex;
+ 
+  flex-direction: column;
+
+  align-content: space-between;
+}
+
+.episodiosub {
+  width: 157px;
+  margin-left: 16px;
+  margin-top: 64px;
+  margin-bottom: 21px;
+  color: var(--blanco);
+}
+
+.playercontainer {
+  display: -ms-grid;
+  display: grid;
+
+  grid-template-columns: 1fr;
+  
+  align-content: center;
+  justify-items: center;
+}
+
+.player {
+  width: 95%;
+  height: 250px;
+}
+
+.playerlast {
+  margin-bottom: 143.5px;
+}
+
+.phone {
+  width: 320px;
+  height: auto;
+  z-index: 1;
+ 
+  align-self: center;
+}
+
+.repositioning {
+ 
+  display: flex;
+
+  
+  flex-direction: column;
+  margin-top: -95.5px;
+}
+
+.comefromsub {
+  width: 288px;
+  height: auto;
+  margin-top: 27px;
+  margin-left: 16px;
+  color: var(--negro);
+}
+
+.comefromtext {
+  line-height: 22px;
+  margin-left: 16px;
+  margin-top: 8px;
+  width: 90%;
+  height: auto;
+  font-size: 0.875rem;
+  color: var(--negro);
+  letter-spacing: 0px;
+  
+}
+
+.guestsub {
+  width: 288px;
+  height: auto;
+  margin-top: 54px;
+  margin-left: 16px;
+  margin-bottom: 14px;
+  color: var(--negro);
+}
+
+.guestimg {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
+.topicsub {
+  width: 288px;
+  height: auto;
+  margin-top: 48px;
+  margin-left: 16px;
+  margin-bottom: 37px;
+  color: var(--negro);
+}
+
+.topicbox {
+  
+  display: flex;
+ 
+  
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.icons {
+  width: 104px;
+  height: auto;
+  margin-bottom: 13px;
+}
+
+.icondesc {
+  width: 288px;
+  color: var(--negro);
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 65px;
+}
+
+.firstitem {
+  margin-bottom: 49px;
+}
+
+.lastitem {
+  margin-bottom: 42px;
+}
+
+.lastnews {
+  width: 100vw;
+  height: auto;
+  background-image: -o-linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.newsub {
+  width: 288px;
+  font-size: 2.25rem;
+  color: var(--blanco);
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 42px;
+  margin-top: 64px;
+}
+
+.listen {
+  margin-top: 36px;
+  margin-bottom: 67px;
+}
+
+footer {
+ 
+  display: flex;
+
+  
+  flex-direction: column;
+  
+  align-items: center;
+}
+
+.copyright {
+  width: 227px;
+  height: auto;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+  color: var(--negro);
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+}
+
+.brands {
+  width: 230px;
+  height: auto;
+  margin-bottom: 31px;
+
+  display: flex;
+}
+
+.brandicon {
+  color: var(--negro);
+  margin-left: 38px;
+}
+
+.firtsicon {
+  margin-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 100vw;
+  }
+
+  .button {
+    width: 226px;
+    height: 56px;
+    font-size: 1.125rem;
+    line-height: 24px;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+    line-height: 48px;
+  }
+
+  .navcontender {
+    width: 100%;
+    height: auto;
+  }
+
+  .logonav {
+    height: 36px;
+    width: 36px;
+    margin-left: 7%;
+    margin-top: 22px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .burger-shower:checked ~ .menunav, .burger-shower:checked ~ .openav {
+    display: none;
+  }
+
+  .navbar {
+    height: 100%;
+    width: auto;
+    margin-right: 7%;
+  }
+
+  .burger-shower:checked ~ .menunav, .menunav {
+    height: 100%;
+    background-color: var(--blanco);
+    position: inherit;
+ 
+    transition: none;
+    
+    display: inline-flex;
+    opacity: 1;
+  }
+
+  .list {
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    
+    display: flex;
+    margin-top: 26px;
+  }
+
+  .fisrtlink {
+    margin-top: 26px;
+  }
+
+  .navlink {
+    color: var(--negro);
+    padding-left: 3.33vw;
+    text-decoration: none;
+  }
+
+  .lettereffect:hover {
+    color: var(--verde);
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+
+  .lettereffect:active {
+    color: rgba(6, 10, 36, 0.56);
+    text-decoration: line-through;
+  }
+
+  .heading {
+   
+    display: flex;
+   
+  
+    flex-direction: column;
+  }
+
+  .title {
+    width: 80%;
+    font-size: 4rem;
+    margin-top: 120px;
+    margin-left: 13.89%;
+    line-height: normal;
+  }
+
+  .letterhead {
+    width: 80%;
+    height: auto;
+    max-width: 628px;
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-left: 13.89%;
+  }
+
+  .break {
+    display: inline;
+  }
+
+  .getmore {
+    width: 226px;
+    padding: 0%;
+    margin-top: 56px;
+    margin-left: 13.89%;
+    margin-bottom: 5px;
+  }
+
+  .episodio {
+
+    clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%);
+  }
+
+  .episodiosub {
+    margin-left: 13.89%;
+    font-size: 3rem;
+    color: var(--blanco);
+    margin-top: 186px;
+    margin-bottom: 26px;
+  }
+
+  .playercontainer {
+    display: -ms-grid;
+    display: grid;
+    
+    grid-template-columns: repeat(2, 40%);
+
+    grid-template-rows: repeat(2, 232px);
+    gap: 72px;
+   
+    
+    justify-content: center;
+  
+    
+    align-items: inherit;
+    margin-bottom: 232.6px;
+  }
+
+  .player {
+    width: 100%;
+    height: 100%;
+  }
+
+  .repositioning {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -168.6px;
+  }
+
+  .phone {
+    width: 457.6px;
+    height: auto;
+  }
+
+  .comefrom {
+    width: 34%;
+  }
+
+  .comefromsub {
+    height: auto;
+    font-size: 3rem;
+    margin-top: 160px;
+  }
+
+  .comefromtext {
+    font-size: 1rem;
+    height: auto;
+    margin-top: 24px;
+  }
+  .guests {
+    width: 100%;
+    
+    display: flex;
+   
+    flex-wrap: wrap;
+  }
+
+  .guestsub {
+    width: 80%;
+    height: 62px;
+    margin-left: 200px;
+    margin-bottom: 36px;
+    font-size: 3rem;
+  }
+
+  .guestimg {
+    width: 33.33vw;
+    height: calc(33.33vw * 0.75);
+    max-height: 364px;
+  }
+
+  .topics {
+    width: calc(100vw - 30.5vw);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .topicsub {
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .topicbox {
+    
+    display: flex;
+    
+ 
+    flex-direction: column;
+    
+    align-items: center;
+  }
+
+  .topicscontainer {
+    width: 90vw;
+    
+    display: flex;
+   
+   
+    flex-flow: row wrap;
+    
+    
+    justify-content: center;
+  }
+
+  .icons {
+    height: 104px;
+    width: 104px;
+    margin-left: 0%;
+    margin-bottom: 29px;
+  }
+
+  .icondesc {
+    width: 220px;
+  }
+
+  .lastnews {
+    width: 100%;
+    height: 518px;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 34px;
+  }
+
+  .newsub {
+    width: 100%;
+    align-self: center;
+    margin-top: 10%;
+    font-size: 3rem;
+    margin-top: 213px;
+  }
+
+  .listen {
+    width: 345px;
+    padding-left: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 36px;
+    margin-bottom: 0%;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .copyright {
+    width: 269px;
+    font-size: 1rem;
+    margin-left: 7%;
+    margin-top: 36px;
+  }
+
+  .brands {
+    width: 274px;
+    margin-right: 7%;
+    margin-top: 36px;
+    margin-left: auto;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contenedor {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  
+
+  .navcontender {
+    width: 100%;
+    height: 80px;
+    margin: 0%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .logonav {
+    margin-left: 100px;
+  }
+
+  .navbar {
+    width: 482px;
+    margin-right: 100px;
+  }
+
+  .list {
+    width: auto;
+    height: 28px;
+    margin-left: 48px;
+    margin-top: 26px;
+  }
+
+  .navlink {
+    padding-left: 0px;
+    text-decoration: none;
+  }
+
+  .fisrtlink {
+    margin-left: 0px;
+  }
+
+  .title {
+    margin-left: 200px;
+  }
+
+  .letterhead {
+    width: 628px;
+    margin-left: 200px;
+  }
+
+  .getmore {
+    width: 226px;
+    height: 56px;
+    margin-left: 200px;
+  }
+
+  .episodiosub {
+    margin-left: 200px;
+  }
+
+  .player {
+    width: 584px;
+    height: 232px;
+  }
+
+  .repositioning {
+    justify-content: flex-start;
+  }
+
+  .phone {
+    margin-left: 200px;
+  }
+
+  .comefromsub {
+    width: 399px;
+    margin-top: 189px;
+    margin-left: 62.4px;
+  }
+
+  .comefromtext {
+    width: 464px;
+    margin-left: 62.4px;
+  }
+
+  .guestsub {
+    margin-left: 200px;
+    margin-top: 64px;
+  }
+
+  .guestimg {
+    width: 33.33%;
+    height: auto;
+  }
+
+  .topics {
+    flex-direction: column;
+  }
+
+  .topicsub {
+    margin-top: 64px;
+    margin-left: 200px;
+    margin-bottom: 69px;
+    text-align: left;
+  }
+
+  .topicscontainer {
+    width: 1040px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 200px;
+  }
+
+  .topicbox {
+    width: 260px;
+  }
+
+  .icondesc {
+    margin-bottom: 0px;
+  }
+
+  .newsub {
+    width: 692px;
+  }
+
+  .copyright {
+    width: 269px;
+  }
+
+  .brands {
+    width: 274px;
+    margin-right: 100px;
+  }
+
+  .brandicon {
+    margin-left: 36px;
+  }
+
+  .firsticon {
+    margin-left: 42px;
+  }
+}
